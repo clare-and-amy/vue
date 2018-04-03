@@ -9,5 +9,6 @@ let routes = []
 routes = routes.concat(other)
 
 export default new Router({
-  routes: routes
+  routes,// 缩写，相当于routes: routes
+  mode: 'history'
 })
