@@ -1,10 +1,13 @@
 <template>
   <div class="hello">
     <a>{{ msg }}</a>
+    <router-link :to="{ path: 'test/index', query: { plan: 'private' }}">Register</router-link>
   </div>
 </template>
 
 <script>
+
+
 export default {
   name: 'Index',
   data () {

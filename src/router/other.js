@@ -9,7 +9,7 @@ export default [{
 },
 {
   path: '/test/index',
-  name: 'index',
+  name: 'test-index',
   component: resolve => {
     require.ensure([], () => {
       resolve(require('@/components/Test'))

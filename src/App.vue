@@ -1,16 +1,22 @@
 <template>
   <div id="app">
+    <CommmonHeader></CommmonHeader>
     <router-view/>
+    <CommmonFooter></CommmonFooter>
   </div>
 </template>
 
 <script>
+
+import CommmonHeader from './components/common/Header.vue'
+import CommmonFooter from './components/common/Footer.vue'
 export default {
   name: 'App',
   data() {
     return {
     }
-  }
+  },
+  components: {CommmonHeader,CommmonFooter}
 }
 </script>
 
