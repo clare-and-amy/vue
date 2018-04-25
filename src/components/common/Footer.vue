@@ -1,6 +1,6 @@
 <template>
   <div class="common-footer">
-    <router-link :to="{ path: '/'}">首页</router-link>
+    @FCKJ 2018
   </div>
 </template>
 
@@ -15,5 +15,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.common-footer {
+  padding:10px;
+  margin-top:10px;
+  text-align:left;
+}
 </style>
