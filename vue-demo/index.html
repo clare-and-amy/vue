@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vue lesson oen</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div id="vue-app">
+		<h1> {{ name }}</h1>
+		<h2> {{ job }}</h2>
+		<h3> {{ greet('陈健') }} </h3>
+		<a v-bind:href="website" target="_blank">我的个人博客</a>
+		<p v-html="websiteTag"></p>
+		<hr>
+		<button v-on:click="age++">加一岁</button>
+		<p>我的年龄是 {{ age }}</p>
+		<button v-on:click="age--">减一岁</button>
+		<hr>
+		<p>
+			<button v-on:click="subtract">-</button>
+			<span>{{num}}</span>
+			<button v-on:click="add">+</button> <em> 最多可以购买5件</em>
+		</p>
+		<hr>
+		<div id="box" @mousemove='updateXY'>
+			{{x}}, {{y}} <span @mousemove.stop> Stop</span>
+		</div>
+		<hr>
+		<a href="https://www.baidu.com" @click.prevent='alert'>点我试一试，我就是不跳</a>
+	</div>
+	<script src='app.js'></script>
+</body>
+</html>
